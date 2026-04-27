@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <title>Graduate Research Profile</title>
-    <meta name="description" content="Graduate research profile for a master's student at DGIST ISL Lab. Publications, research interests, academic background, and contact information.">
+    <meta name="description" content="Graduate research profile — autonomous driving, world models, robotics, and Physical AI. DGIST ISL Lab.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -63,21 +63,6 @@
         a {
             color: inherit;
             text-decoration: none;
-        }
-
-        .journal-grain {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-image:
-                linear-gradient(rgba(255,255,255,0.18), rgba(255,255,255,0.18)),
-                url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140' viewBox='0 0 140 140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='0.07'/%3E%3C/svg%3E");
-            mix-blend-mode: multiply;
-            pointer-events: none;
-            opacity: 0.4;
-            z-index: 1;
         }
 
         header {
@@ -340,6 +325,10 @@
                 grid-template-columns: 1.25fr 0.95fr;
             }
 
+            .content-section.single-col {
+                grid-template-columns: 1fr;
+            }
+
             .content-section.reverse {
                 grid-template-columns: 0.9fr 1.1fr;
             }
@@ -524,57 +513,6 @@
             height: 1rem;
         }
 
-        .image-panel {
-            position: relative;
-            min-height: 320px;
-            overflow: hidden;
-            border: 1px solid var(--line);
-            background: linear-gradient(180deg, rgba(255,255,255,0.52), rgba(255,255,255,0.24));
-            box-shadow: 0 22px 48px rgba(24, 30, 36, 0.06);
-        }
-
-        .image-panel img {
-            position: absolute;
-            inset: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .image-overlay {
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(to right, rgba(248,244,236,0.12), transparent, rgba(248,244,236,0.3));
-        }
-
-        .image-caption {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            border-top: 1px solid rgba(248,244,236,0.28);
-            background: rgba(22, 28, 37, 0.72);
-            padding: 1.25rem;
-            text-align: left;
-            backdrop-filter: blur(12px);
-        }
-
-        .image-caption-label {
-            font-family: monospace;
-            font-size: 10px;
-            font-weight: 600;
-            letter-spacing: 0.28em;
-            text-transform: uppercase;
-            color: rgba(248,244,236,0.72);
-        }
-
-        .image-caption-text {
-            margin-top: 0.75rem;
-            font-size: 0.875rem;
-            line-height: 1.75;
-            color: rgba(248,244,236,0.92);
-        }
-
         .experience-grid {
             display: grid;
             gap: 1.5rem;
@@ -583,7 +521,7 @@
 
         @media (min-width: 1024px) {
             .experience-grid {
-                grid-template-columns: repeat(3, 1fr);
+                grid-template-columns: repeat(2, 1fr);
             }
         }
 
@@ -733,8 +671,6 @@
     </style>
 </head>
 <body>
-    <div class="journal-grain"></div>
-
     <header>
         <div class="header-container">
             <div class="header-title">
@@ -757,7 +693,7 @@
                 <div class="journal-panel">
                     <div class="panel-section">
                         <p class="section-label">Researcher Index</p>
-                        <h1 class="section-title profile-name">Your Name</h1>
+                        <h1 class="section-title profile-name">Sihyeong Lee</h1>
                         <p style="margin-top: 1rem; font-size: 0.875rem; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase; color: var(--accent-deep);">Master's Student · Graduate Researcher</p>
                     </div>
 
@@ -787,9 +723,10 @@
                     <div class="panel-section">
                         <p class="section-label">Research Focus</p>
                         <div class="focus-tags">
-                            <span class="focus-tag">Human-Computer Interaction</span>
-                            <span class="focus-tag">Research Methods</span>
-                            <span class="focus-tag">AI-Assisted Knowledge Work</span>
+                            <span class="focus-tag">Autonomous Driving</span>
+                            <span class="focus-tag">World Model</span>
+                            <span class="focus-tag">Robotics</span>
+                            <span class="focus-tag">Physical AI</span>
                         </div>
                     </div>
 
@@ -826,53 +763,32 @@
             </aside>
 
             <div class="content">
-                <section id="about" class="content-section">
+                <section id="about" class="content-section single-col">
                     <article class="journal-panel">
                         <div class="panel-section">
                             <p class="section-label">About</p>
                             <h2 class="section-title" style="max-width: 12ch;">Research Profile & Academic Background</h2>
-                            <p style="margin-top: 1.5rem; max-width: 42rem; line-height: 2; color: var(--muted-ink);">This is a professional research profile page designed for graduate students and early-career researchers. It provides a comprehensive overview of your research interests, publications, academic experience, and contact information in a single, accessible location. Customize this template with your own information to create your professional online presence.</p>
+                            <p style="margin-top: 1.5rem; max-width: 42rem; line-height: 2; color: var(--muted-ink);">Master's student at DGIST ISL Lab. Research interests center on autonomous driving, world models, robotics, and Physical AI—building systems that reason about the physical world and act safely in real environments. This page summarizes background, ongoing work, and contact information.</p>
 
                             <div class="stats-grid">
                                 <div class="stat-item">
-                                    <p class="stat-value">03</p>
+                                    <p class="stat-value">04</p>
                                     <p class="stat-label">Research Areas</p>
                                 </div>
                                 <div class="stat-item">
-                                    <p class="stat-value">06</p>
+                                    <p class="stat-value">0</p>
                                     <p class="stat-label">Publications</p>
                                 </div>
                                 <div class="stat-item">
-                                    <p class="stat-value">04</p>
+                                    <p class="stat-value">0</p>
                                     <p class="stat-label">Collaborations</p>
                                 </div>
                             </div>
                         </div>
                     </article>
-
-                    <article class="image-panel">
-                        <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663585776420/RH9HTA6UyYNBfLFjjQS8XB/graduate-profile-hero-reference-Mg4a8TV49yG6zG4dnjQRZX.webp" alt="Research materials and notes on a desk">
-                        <div class="image-overlay"></div>
-                        <div class="image-caption">
-                            <p class="image-caption-label">Profile Snapshot</p>
-                            <p class="image-caption-text">Your research areas, institutional affiliation, and contact information are immediately visible on this page.</p>
-                        </div>
-                    </article>
                 </section>
 
-                <section id="research" class="content-section reverse">
-                    <article class="image-panel">
-                        <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663585776420/RH9HTA6UyYNBfLFjjQS8XB/graduate-profile-research-detail-5FzVs28hxQyogzPLW85J9m.webp" alt="Research notes and diagrams on a workspace">
-                        <div class="image-overlay"></div>
-                        <div style="position: absolute; left: 1.25rem; top: 1.25rem; display: inline-flex; align-items: center; gap: 0.5rem; border: 1px solid rgba(248,244,236,0.2); background: rgba(12, 16, 21, 0.48); padding: 0.5rem 0.75rem; font-size: 11px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--paper); backdrop-filter: blur(12px);">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 0.875rem; height: 0.875rem;">
-                                <circle cx="12" cy="12" r="1"></circle>
-                                <path d="M12 1v6m0 6v6M4.22 4.22l4.24 4.24m5.08 0l4.24-4.24M1 12h6m6 0h6M4.22 19.78l4.24-4.24m5.08 0l4.24 4.24"></path>
-                            </svg>
-                            Current Research
-                        </div>
-                    </article>
-
+                <section id="research" class="content-section single-col">
                     <article class="journal-panel">
                         <div class="panel-section">
                             <div class="section-header">
@@ -891,22 +807,29 @@
                                 <article class="research-item">
                                     <div class="research-item-number">01</div>
                                     <div>
-                                        <h4 class="research-item-title">Research Topic 01</h4>
-                                        <p class="research-item-body">Describe your primary research question or focus area in one paragraph. This could include topics such as user experience, artificial intelligence, data analysis, educational technology, or other specialized areas within your field.</p>
+                                        <h4 class="research-item-title">Autonomous Driving</h4>
+                                        <p class="research-item-body">End-to-end and modular approaches to perception, prediction, and planning for safe operation in complex traffic; interest in sim-to-real transfer, safety evaluation, and robustness under distribution shift.</p>
                                     </div>
                                 </article>
                                 <article class="research-item">
                                     <div class="research-item-number">02</div>
                                     <div>
-                                        <h4 class="research-item-title">Research Topic 02</h4>
-                                        <p class="research-item-body">Introduce your research methodology or tools. This might include quantitative or qualitative methods, experimental design, interviews, system development, prototyping, or other relevant approaches in your research.</p>
+                                        <h4 class="research-item-title">World Model</h4>
+                                        <p class="research-item-body">Learned dynamics and latent representations of environments for long-horizon reasoning, imagination-based planning, and bridging observation streams with future-state prediction for embodied agents.</p>
                                     </div>
                                 </article>
                                 <article class="research-item">
                                     <div class="research-item-number">03</div>
                                     <div>
-                                        <h4 class="research-item-title">Research Topic 03</h4>
-                                        <p class="research-item-body">Outline your future research directions. This could include doctoral studies, industry collaboration, conference presentations, or subsequent projects. Presenting clear and concise future plans strengthens your professional profile.</p>
+                                        <h4 class="research-item-title">Robotics</h4>
+                                        <p class="research-item-body">Control, state estimation, and sensor fusion for mobile and manipulator systems; integration of learning with classical robotics when stability and interpretability matter in the loop.</p>
+                                    </div>
+                                </article>
+                                <article class="research-item">
+                                    <div class="research-item-number">04</div>
+                                    <div>
+                                        <h4 class="research-item-title">Physical AI</h4>
+                                        <p class="research-item-body">Models and systems that connect perception in the real world with physical interaction—touching on embodiment, data efficiency, and deployment constraints beyond screen-only or purely digital domains.</p>
                                     </div>
                                 </article>
                             </div>
@@ -914,7 +837,7 @@
                     </article>
                 </section>
 
-                <section id="publications" class="content-section">
+                <section id="publications" class="content-section single-col">
                     <article class="journal-panel">
                         <div class="panel-section">
                             <div class="section-header">
@@ -929,69 +852,6 @@
                                     </svg>
                                 </div>
                             </div>
-
-                            <div class="publications">
-                                <article class="publication-item">
-                                    <div>
-                                        <p class="pub-year">2026</p>
-                                        <p class="pub-status">Under Review</p>
-                                    </div>
-                                    <div>
-                                        <h4 class="pub-title">A Working Paper Title About Your Research Topic</h4>
-                                        <p class="pub-venue">Target Journal or Conference</p>
-                                        <p class="pub-desc">Summarize your research question, methodology, and contributions in 1-2 sentences. Indicating submission status demonstrates active research engagement.</p>
-                                        <a href="#contact" class="pub-link">
-                                            <span>Inquire</span>
-                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                                <path d="M7 7h10v10M7 17L17 7"></path>
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </article>
-                                <article class="publication-item">
-                                    <div>
-                                        <p class="pub-year">2025</p>
-                                        <p class="pub-status">Conference</p>
-                                    </div>
-                                    <div>
-                                        <h4 class="pub-title">Conference Paper or Poster Title</h4>
-                                        <p class="pub-venue">Conference Name, City</p>
-                                        <p class="pub-desc">Posters, conference presentations, workshop papers, and seminar talks are valuable research outputs that strengthen your academic profile.</p>
-                                        <a href="#publications" class="pub-link">
-                                            <span>Details</span>
-                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                                <path d="M7 7h10v10M7 17L17 7"></path>
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </article>
-                                <article class="publication-item">
-                                    <div>
-                                        <p class="pub-year">2024</p>
-                                        <p class="pub-status">Project</p>
-                                    </div>
-                                    <div>
-                                        <h4 class="pub-title">Graduate Research Project or Lab Collaboration</h4>
-                                        <p class="pub-venue">Lab / Department / External Partner</p>
-                                        <p class="pub-desc">Highlight practical contributions such as experimental design, prototype development, data collection, and analysis automation. These demonstrate your ability to contribute to collaborative research.</p>
-                                        <a href="#experience" class="pub-link">
-                                            <span>View Experience</span>
-                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                                <path d="M7 7h10v10M7 17L17 7"></path>
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </article>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="image-panel">
-                        <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663585776420/RH9HTA6UyYNBfLFjjQS8XB/graduate-profile-publications-panel-hykPmZFpikVmq4ZWKf2VDL.webp" alt="Academic papers and notes arranged neatly">
-                        <div class="image-overlay"></div>
-                        <div class="image-caption">
-                            <p class="image-caption-label">Editorial Archive</p>
-                            <p class="image-caption-text">This section accommodates formal publications, posters, workshop papers, and project documentation.</p>
                         </div>
                     </article>
                 </section>
@@ -1008,25 +868,20 @@
 
                         <div class="experience-grid">
                             <article class="experience-item">
-                                <p class="exp-period">2025 — Present</p>
+                                <p class="exp-period">2026 — Present</p>
                                 <h4 class="exp-title">Master's Student, ISL Lab</h4>
-                                <p class="exp-body">Conducting research design, literature review, data collection and analysis, manuscript preparation, and conference presentation. Managing timelines and documentation for collaborative projects.</p>
+                                <p class="exp-body">Graduate research in autonomous driving, world models, robotics, and Physical AI at DGIST Intelligent Systems Lab.</p>
                             </article>
                             <article class="experience-item">
-                                <p class="exp-period">2024 — 2025</p>
-                                <h4 class="exp-title">Research Assistant / Teaching Assistant</h4>
-                                <p class="exp-body">Organized course materials, supported practical sessions, and provided guidance on foundational statistics and programming tools. Gained experience in educational support.</p>
-                            </article>
-                            <article class="experience-item">
-                                <p class="exp-period">2023 — 2024</p>
-                                <h4 class="exp-title">Undergraduate Research Intern</h4>
-                                <p class="exp-body">Participated in research projects, industry collaborations, and practical research work prior to graduate studies. This experience demonstrates research continuity and professional development.</p>
+                                <p class="exp-period">2025 — 2026</p>
+                                <h4 class="exp-title">Undergraduate Research Intern, ISL Lab</h4>
+                                <p class="exp-body">Undergraduate research internship with ISL Lab prior to the master's program.</p>
                             </article>
                         </div>
                     </div>
                 </section>
 
-                <section id="contact" class="content-section">
+                <section id="contact" class="content-section single-col">
                     <article class="journal-panel">
                         <div class="panel-section">
                             <div class="section-header">
@@ -1063,14 +918,6 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </article>
-
-                    <article class="image-panel">
-                        <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663585776420/RH9HTA6UyYNBfLFjjQS8XB/graduate-profile-contact-motif-JbgSSnK9G3JFHaQLkkAtY8.webp" alt="Envelopes and stationery on a neutral background">
-                        <div class="image-overlay"></div>
-                        <div style="position: absolute; left: 1.25rem; top: 1.25rem; border: 1px solid rgba(42, 47, 53, 0.08); background: rgba(248,244,236,0.72); padding: 0.5rem 0.75rem; font-size: 11px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--ink-strong); backdrop-filter: blur(12px);">
-                            Professional Contact
                         </div>
                     </article>
                 </section>
